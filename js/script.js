@@ -62,21 +62,23 @@
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
-
     bindEvents();
   };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    const newTaskContent = document.querySelector(".js-newTask").value.trim();
-    console.log(newTaskContent);
+    const newTaskInput = document.querySelector(".js-newTask")
+    const newTaskContent = newTaskInput.value.trim();
 
     if (newTaskContent === "") {
+      newTaskInput.focus();
       return;
     }
 
     addNewTask(newTaskContent);
+    newTaskInput.value = "";
+    newTaskInput.focus();
   };
 
   const init = () => {
