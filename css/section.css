@@ -30,3 +30,22 @@
       padding: 10px;
       border-bottom: 1px solid #ddd;
 }
+
+.section__listItem--done {
+      text-decoration: line-through;;
+}
+
+.section__button {
+      background-color: rgb(27,122,30);
+      color:white;
+      text-decoration: none;
+      border: none;
+      width: 30px;
+      height: 30px;
+      padding: 0px;
+      margin: 5px;
+}
+
+.section__buttonRemove {
+      background-color: rgb(236,41,56);
+}
