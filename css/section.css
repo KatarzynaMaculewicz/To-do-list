@@ -46,6 +46,11 @@
       margin: 5px;
 }
 
+.section__button:active {
+      border: 2px solid black;
+      border-radius: 2px;
+}
+
 .section__buttonRemove {
       background-color: rgb(236,41,56);
 }
