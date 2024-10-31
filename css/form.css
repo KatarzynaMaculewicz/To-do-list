@@ -1,8 +1,13 @@
 .form {
       display: grid;
       grid-template-columns: 1fr auto;
-      grid-template-rows: 2;
       grid-gap: 20px;
+}
+
+@media (max-width:767px) {
+      .form {
+            grid-template-columns: 1fr;
+      }
 }
 
 .form__button {
