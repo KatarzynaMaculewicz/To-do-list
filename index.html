@@ -4,7 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/section.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
         <script defer src="js/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Document</title>
         <link
             rel="stylesheet"
@@ -15,10 +21,25 @@
         >
     </head>
     <body>
-        <form class="js-form">
-            <input class="js-newTask" placeholder="Co jest do zrobienia?">
-            <button>Dodaj zadanie</button>
-            <ul class="js-tasks"></ul>
-        </form>
+        <main class="main">
+            <header>
+                <h1>Lista zadań</h1>
+            </header>
+            <section class="section">
+                <h2 class="section__header">Dodaj nowe zadanie</h2>
+                <div class="section__div">
+                    <form class="form js-form">
+                        <input class="form__input js-newTask" placeholder="Co jest do zrobienia?">
+                        <button class="form__button">Dodaj zadanie</button>
+                    </form>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__header">Lista zadań</h2>
+                <div class="section__div">
+                    <ul class="js-tasks"></ul>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

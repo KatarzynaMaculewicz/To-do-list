@@ -7,3 +7,9 @@ html {
 ::before {
       box-sizing: inherit;
 }
+
+body {
+      font-family: 'Montserrat', Helvetica, sans-serif;
+      background: #EEE;
+      word-break: break-word;
+}
