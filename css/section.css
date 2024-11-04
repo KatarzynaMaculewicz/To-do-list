@@ -22,7 +22,6 @@
 }
 
 .section__listItem {
-     
       display: grid;
       grid-template-columns: auto 1fr auto;
       align-items: center;
@@ -32,12 +31,12 @@
 }
 
 .section__listItem--done {
-      text-decoration: line-through;;
+      text-decoration: line-through;
 }
 
 .section__button {
-      background-color: rgb(27,122,30);
-      color:white;
+      background-color: rgb(27, 122, 30);
+      color: white;
       text-decoration: none;
       border: none;
       width: 30px;
@@ -52,5 +51,5 @@
 }
 
 .section__buttonRemove {
-      background-color: rgb(236,41,56);
+      background-color: rgb(236, 41, 56);
 }
