@@ -11,15 +11,23 @@
 }
 
 .form__button {
-      background-color: teal;
+      background-color: rgb(0, 128, 128);
       color: white;
       border: none;
       padding: 10px;
+      transition: trsnsform 0,25s linear, background 0.75s linear;
+}
+
+.form__button:hover {
+      background-color: hsl(180, 88%, 33%);
+      transform: scale(1.025);
 }
 
 .form__button:active {
+      background-color: hsl(180, 76%, 39%);
       outline: 2px solid black;
       border-radius: 2px;
+      transform: scale(1);
 }
 
 .form__input {
