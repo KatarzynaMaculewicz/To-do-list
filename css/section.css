@@ -34,6 +34,10 @@
       text-decoration: line-through;
 }
 
+.section__listItem--hiden {
+      display: none;
+}
+
 .section__button {
       background-color: rgb(27, 122, 30);
       color: white;
