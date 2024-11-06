@@ -4,11 +4,33 @@
       box-shadow: 0 0 5px #ddd;
 }
 
+.section__headerDiv {
+      padding: 20px;
+      margin: 0px;
+      border-bottom: 1px solid #ddd;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+}
+
+@media (max-width:767px) {
+      .section__headerDiv {
+            grid-template-columns: 1fr;
+            gap: 20px;
+      }
+}
+
+@media (max-width:767px) {
+      .section__toggleTasksButtons {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 20px;
+      }
+}
+
 .section__header {
       font-size: 20px;
-      padding: 20px;
       margin: 0;
-      border-bottom: 1px solid #ddd;
 }
 
 .section__div {
@@ -52,6 +74,7 @@
 
 .section__button:hover {
       background-color: rgb(78, 209, 83);
+      cursor: pointer;
 }
 
 .section__button:active {
@@ -65,4 +88,22 @@
 
 .section__buttonRemove:hover {
       background-color: rgb(254, 138, 147);
+      cursor: pointer;
+}
+
+.section__toggleTasksButton {
+      color: teal;
+      background-color: transparent;
+      border: none;
+      transition: color 0.75s linear;
+}
+
+.section__toggleTasksButton:hover {
+      color: hsl(180, 48%, 57%);
+      cursor: pointer;
+}
+
+.section__toggleTasksButton:disabled {
+      color: rgb(174 176 176);
+      cursor: auto;
 }
