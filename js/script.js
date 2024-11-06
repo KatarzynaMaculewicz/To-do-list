@@ -95,13 +95,13 @@
       !tasks.length
         ? (htmlButtons = "")
         : (htmlButtons += `
-        <button class="section__toggleTasksButton js-toggleHideDoneTasks">
-          ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
-        </button>
-        <button class="section__toggleTasksButton js-markAsDoneTasks"
-        ${tasks.every(({ done }) => done) ? "disabled" : ""}>
-          Ukończ wszyskie
-        </button>
+          <button class="section__toggleTasksButton js-toggleHideDoneTasks">
+            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+          </button>
+          <button class="section__toggleTasksButton js-markAsDoneTasks"
+          ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+            Ukończ wszyskie
+          </button>
       `);
     }
 
